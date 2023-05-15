@@ -1,0 +1,18 @@
+//utils
+@import './utils/variables.scss';
+
+// common
+@import './common/common.scss';
+
+// pages
+@import './pages/home.scss';
+@import './pages/details.scss';
+
+// components
+@import './components/tags.scss';
+@import './components/button.scss';
+@import './components/steps.scss';
+@import './components/form.scss';
+@import './components/input.scss';
+@import './components/radio-buttons-group.scss';
+@import './components/quantity-input.scss';

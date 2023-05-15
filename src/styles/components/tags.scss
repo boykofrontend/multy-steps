@@ -1,0 +1,49 @@
+.tags-component {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  
+  &-title {
+    margin-bottom: 0;
+    margin-top: 24px;
+    line-height: 22px;
+    font-weight: 500;
+    width: 100%;
+    white-space: nowrap;
+
+    @media (min-width: $screen-xl-max) {
+      margin-top: 28px;
+
+      br {
+        display: none;
+      }
+    }
+  }
+}
+
+.radio-tag {
+  padding: 6px 12px;
+  background-color: $light-opacity-grey;
+  line-height: 20px;
+  border-radius: 16px;
+  cursor: pointer;
+  display: block;
+
+  &-wrapper {
+    input {
+      display: none;
+
+      &:checked {
+        &~span {
+          color: $light-blue;
+          background-color: $light-opacity-blue;
+        }
+      }
+    }
+  }
+
+  &.active {
+    color: $light-blue;
+    background-color: $light-opacity-blue;
+  }
+}

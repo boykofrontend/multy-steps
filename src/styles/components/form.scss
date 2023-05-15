@@ -1,0 +1,88 @@
+.form {
+  @media (min-width: $screen-xl-max) {
+    padding-left: 60px;
+    padding-top: 100px;
+    max-width: 680px;
+  }
+
+  &-title {
+    font-weight: 500;
+    color: $white;
+    font-size: 32px;
+    line-height: 38px;
+    margin-top: 8px;
+    margin-bottom: 24px;
+    letter-spacing: -0.95px;
+
+    &.third-step {
+      margin-bottom: 16px;
+    }
+
+    @media (min-width: $screen-xl-max) {
+      margin-bottom: 28px;
+      letter-spacing: 0;
+      white-space: nowrap;
+    }
+  }
+
+  &-subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    color: $light-blue;
+    margin-top: 20px;
+
+    @media (min-width: $screen-xl-max) {
+      margin-top: 0;
+      font-size: 20px;
+      line-height: 24px;
+    }
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    gap: 16px;
+    margin-top: 24px;
+
+    @media (min-width: $screen-xl-max) {
+      margin-top: 4px;
+      gap: 32px;
+    }
+
+    .back-btn {
+      background-color: $light-opacity-grey;
+      color: $white;
+
+      @media (min-width: $screen-xl-max) {
+        max-width: 120px;
+      }
+    }
+
+    .next-btn, .back-btn {
+      margin-top: 0;
+    }
+  }
+
+  &-step {
+    &-third {
+      .email-title {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 16px;
+
+        @media (min-width: $screen-xl-max) {
+          margin-top: 4px;
+        }
+      }
+
+      .custom-input {
+        margin-bottom: 24px;
+      }
+    }
+  }
+
+  .details-btn {
+    @media (min-width: $screen-xl-max) {
+      display: none;
+    }
+  }
+}

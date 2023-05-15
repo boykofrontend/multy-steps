@@ -1,0 +1,12 @@
+.home-page {
+  padding: 0 16px 72px;
+  max-width: 600px;
+  margin: 0 auto;
+
+  @media (min-width: $screen-xl-max) {
+    max-width: unset;
+    padding: 0;
+    display: flex;
+    min-height: 1024px;
+  }
+}
