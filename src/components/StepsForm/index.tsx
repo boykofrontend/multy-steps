@@ -11,6 +11,7 @@ import Button from '../Button';
 import { PAGES_PATHS } from '../../utils/paths';
 import { StepSubtitles, StepTitles } from '../../utils/constants';
 import {
+  cookiesGetCompletedForm,
   cookiesGetFormData, cookiesRemoveFormData,
   cookiesSetCompletedForm, cookiesSetFormData
 } from '@/src/utils/cookiesManager';
@@ -28,6 +29,7 @@ interface StepsFormProps {
 const StepsForm: FC<StepsFormProps> = ({step, setCurrentStep}) => {
   const router = useRouter();
   const [formValues, setFormValues] = useState<FormValuesType>({});
+  const [isExistProject, setIsExistProject] = useState<boolean>(false);
 
   const cachedFormData = cookiesGetFormData() || {};
 
@@ -36,6 +38,16 @@ const StepsForm: FC<StepsFormProps> = ({step, setCurrentStep}) => {
       setFormValues(cachedFormData);
     }
   }, [step]);
+
+  useEffect(() => {
+    const cachedProject = cookiesGetCompletedForm();
+    
+    if (!!cachedProject) {
+      console.log('here');
+      
+      setIsExistProject(true);
+    }
+  }, []);
 
   const redirectToDetails = () => {
     router.push(PAGES_PATHS.details)
@@ -65,16 +77,13 @@ const StepsForm: FC<StepsFormProps> = ({step, setCurrentStep}) => {
     setFormValues({...formValues, [e.currentTarget.name]: e.currentTarget.value});
   };
 
-  const onCountChange = (name: string, count: string)  => {
-    console.log('here', count);
-    
+  const onCountChange = (name: string, count: string)  => {    
     setFormValues({...formValues, [name]: count})
   };
 
   const onRadioButtonChange = (name: string, type: string) => () => {
     setFormValues({...formValues, [type]: name})
   };
-  console.log('form', formValues);
   
   return (
     <form className='form' onSubmit={handleFormSubmit}>
@@ -121,6 +130,7 @@ const StepsForm: FC<StepsFormProps> = ({step, setCurrentStep}) => {
         className='details-btn'
         name="Existing project"
         onClick={redirectToDetails}
+        isDisabled={!isExistProject}
       />
     </form>
   );
