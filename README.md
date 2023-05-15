@@ -1,1 +1,3 @@
-# multy-steps
+# multy-steps 
+# start comman
+npm run dev
