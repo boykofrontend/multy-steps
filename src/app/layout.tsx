@@ -1,8 +1,8 @@
 import 'normalize.css';
 import './../styles/global.scss';
-import { Inter } from 'next/font/google';
+import { Space_Grotesk } from 'next/font/google';
 
-const inter = Inter({ subsets: ['latin'] })
+const spaceGrotec = Space_Grotesk({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -16,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={spaceGrotec.className}>
         <main>
           {children}
         </main>
