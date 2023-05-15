@@ -5,6 +5,10 @@
   margin-right: auto;
   margin-left: auto;
 
+  @media (min-width: $screen-xl-max) {
+    min-height: 1024px;
+  }
+
   .details {
     &-wrapper {
       display: flex;
