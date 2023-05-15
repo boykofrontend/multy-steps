@@ -1,8 +1,11 @@
 {
   "name": "multi-step",
   "version": "0.1.0",
+  "homepage": "https://boykofrontend.github.io/multy-steps",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
@@ -24,5 +27,8 @@
     "sass": "^1.62.1",
     "typescript": "5.0.4",
     "universal-cookie": "^4.0.4"
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
