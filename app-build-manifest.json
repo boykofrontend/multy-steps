@@ -1,0 +1,35 @@
+{
+  "pages": {
+    "/page": [
+      "static/chunks/webpack-fb75a622d747c9d8.js",
+      "static/chunks/2443530c-662ef520900e4b35.js",
+      "static/chunks/139-afa072c97a0b34d0.js",
+      "static/chunks/main-app-4c3d6436cdf67018.js",
+      "static/chunks/319-132f5714d0d6d427.js",
+      "static/chunks/app/page-b435c77874bb0dd6.js"
+    ],
+    "/layout": [
+      "static/chunks/webpack-fb75a622d747c9d8.js",
+      "static/chunks/2443530c-662ef520900e4b35.js",
+      "static/chunks/139-afa072c97a0b34d0.js",
+      "static/chunks/main-app-4c3d6436cdf67018.js",
+      "static/css/024626fbebd913fb.css",
+      "static/chunks/app/layout-4b581270e7a59e0e.js"
+    ],
+    "/multy-steps/page": [
+      "static/chunks/webpack-fb75a622d747c9d8.js",
+      "static/chunks/2443530c-662ef520900e4b35.js",
+      "static/chunks/139-afa072c97a0b34d0.js",
+      "static/chunks/main-app-4c3d6436cdf67018.js",
+      "static/chunks/319-132f5714d0d6d427.js",
+      "static/chunks/app/multy-steps/page-4b7616a6f54f94e2.js"
+    ],
+    "/multy-steps/details/page": [
+      "static/chunks/webpack-fb75a622d747c9d8.js",
+      "static/chunks/2443530c-662ef520900e4b35.js",
+      "static/chunks/139-afa072c97a0b34d0.js",
+      "static/chunks/main-app-4c3d6436cdf67018.js",
+      "static/chunks/app/multy-steps/details/page-09552af612275562.js"
+    ]
+  }
+}
