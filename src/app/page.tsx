@@ -1,20 +1,19 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
+import { FC, useState } from "react";
 
-import Steps from '../components/Steps';
-import StepsForm from '../components/StepsForm';
+import Steps from "../components/Steps";
+import StepsForm from "../components/StepsForm";
 
-
-const Home = () => {
+const Home: FC = () => {
   const [currentStep, setCurrentStep] = useState<number>(1);
-  
+
   return (
-    <div className='home-page'>
+    <div className="home-page">
       <Steps currentStep={currentStep} />
       <StepsForm step={currentStep} setCurrentStep={setCurrentStep} />
     </div>
-  )
+  );
 };
 
 export default Home;
