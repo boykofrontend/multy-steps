@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 interface RadioButtonsGroupProps {
   data: string[];
@@ -9,10 +9,14 @@ interface RadioButtonsGroupProps {
 }
 
 const RadioButtonsGroup: FC<RadioButtonsGroupProps> = ({
-  data, onChange, inputName, activeButton, title
-}) =>  (
-  <div className='radio-buttons-wrapper'>
-    {title && <h2 className='radio-button-title'>{title}</h2>}
+  data,
+  onChange,
+  inputName,
+  activeButton,
+  title,
+}) => (
+  <div className="radio-buttons-wrapper">
+    {title && <h2 className="radio-button-title">{title}</h2>}
     {data.map((name) => (
       <React.Fragment key={name}>
         <label className="radio-button">

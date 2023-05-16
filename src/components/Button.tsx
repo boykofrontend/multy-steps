@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   name: string;
@@ -7,7 +7,11 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const Button: FC<ButtonProps> = ({
-  name, onClick, isDisabled, className = '', type = 'button'
+  name,
+  onClick,
+  isDisabled,
+  className = "",
+  type = "button",
 }) => (
   <button
     className={`custom-btn ${className}`}

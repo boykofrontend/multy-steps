@@ -1,4 +1,4 @@
-import React, { FC } from 'react';
+import React, { FC } from "react";
 
 interface RadioTagProps {
   name: string;
@@ -6,10 +6,14 @@ interface RadioTagProps {
 }
 
 const Tag: FC<RadioTagProps> = ({ name, onChange }) => (
-  <div className='radio-tag-wrapper'>
+  <div className="radio-tag-wrapper">
     <label>
-      <input name='radioTag' type="radio" onChange={onChange(name, 'radioTag')} />
-      <span className='radio-tag'>{name}</span>
+      <input
+        name="radioTag"
+        type="radio"
+        onChange={onChange(name, "radioTag")}
+      />
+      <span className="radio-tag">{name}</span>
     </label>
   </div>
 );
